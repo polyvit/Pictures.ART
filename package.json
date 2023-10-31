@@ -1,10 +1,13 @@
 {
   "name": "picture",
   "version": "1.0.0",
+  "homepage": "https://polyvit.github.io/Pictures.ART/",
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "deploy": "gh-pages -d dist",
+    "predeploy": "gulp build-prod-js"
   },
   "author": "",
   "license": "ISC",
@@ -24,5 +27,8 @@
     "gulp": "^4.0.2",
     "webpack": "^4.41.2",
     "webpack-stream": "^5.2.1"
+  },
+  "dependencies": {
+    "gh-pages": "^6.0.0"
   }
 }
